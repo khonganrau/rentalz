@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#AB7C59B5">
+
+        <TextView
+            android:id="@+id/tvTopic1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/sourcesanspro_extralightitalic"
+            android:text="@string/topic1"
+            android:textColor="@color/white"
+            android:textSize="60sp" />
+
+        <TextView
+            android:id="@+id/tvTopic2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTopic1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/sourcesanspro_regular"
+            android:text="@string/topic2"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <!-- Create form -->
+        <RelativeLayout
+            android:id="@+id/lo_property"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tvTopic2"
+            android:background="@drawable/custom_layout_front">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/propertytype"/>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- Bedroom field -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textLayout2"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lo_property"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="30dp"
+                android:hint="@string/bedroom"
+                app:boxBackgroundColor="@color/white"
+                app:boxCornerRadiusBottomEnd="30dp"
+                app:boxCornerRadiusBottomStart="30dp"
+                app:boxCornerRadiusTopEnd="30dp"
+                app:boxCornerRadiusTopStart="30dp"
+                app:boxStrokeColor="@color/purple"
+                tools:ignore="NotSibling">
+                <!--                    <EditText-->
+                <!--                        android:id="@+id/editText1"-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:clickable="true"-->
+                <!--                        android:cursorVisible="false"-->
+                <!--                        android:focusable="false"-->
+                <!--                        android:focusableInTouchMode="false"-->
+                <!--                        android:importantForAutofill="no"/>-->
+                <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Date & Time -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputEdit"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textLayout2"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="30dp"
+                app:boxBackgroundColor="@color/white"
+                app:boxCornerRadiusBottomEnd="30dp"
+                app:boxCornerRadiusBottomStart="30dp"
+                app:boxCornerRadiusTopEnd="30dp"
+                app:boxCornerRadiusTopStart="30dp"
+                app:boxStrokeColor="@color/purple">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/dateandtime" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Monthly rent price -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textLayout3"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textInputEdit"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="30dp"
+                app:boxBackgroundColor="@color/white"
+                app:boxCornerRadiusBottomEnd="30dp"
+                app:boxCornerRadiusBottomStart="30dp"
+                app:boxCornerRadiusTopEnd="30dp"
+                app:boxCornerRadiusTopStart="30dp"
+                app:boxStrokeColor="@color/purple">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/price" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Furniture types -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textLayout4"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textLayout3"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="30dp"
+                app:boxBackgroundColor="@color/white"
+                app:boxCornerRadiusBottomEnd="30dp"
+                app:boxCornerRadiusBottomStart="30dp"
+                app:boxCornerRadiusTopEnd="30dp"
+                app:boxCornerRadiusTopStart="30dp"
+                app:boxStrokeColor="@color/purple">
+
+                <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/funituretype" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!-- Notes -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textLayout5"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textLayout4"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="30dp"
+                app:boxBackgroundColor="@color/white"
+                app:boxCornerRadiusBottomEnd="30dp"
+                app:boxCornerRadiusBottomStart="30dp"
+                app:boxCornerRadiusTopEnd="30dp"
+                app:boxCornerRadiusTopStart="30dp"
+                app:boxStrokeColor="@color/purple">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/note" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!-- Name of the reporter -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textLayout6"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textLayout5"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="30dp"
+                app:boxBackgroundColor="@color/white"
+                app:boxCornerRadiusBottomEnd="30dp"
+                app:boxCornerRadiusBottomStart="30dp"
+                app:boxCornerRadiusTopEnd="30dp"
+                app:boxCornerRadiusTopStart="30dp"
+                app:boxStrokeColor="@color/purple">
+                <!--                <EditText-->
+                <!--                    android:textColorHint="@color/red"-->
+                <!--                    android:textColor="@color/black"-->
+                <!--                    android:hint="@string/namereporter"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:clickable="true"-->
+                <!--                    android:cursorVisible="false"-->
+                <!--                    android:focusable="false"-->
+                <!--                    android:focusableInTouchMode="false"-->
+                <!--                    android:importantForAutofill="no"-->
+                <!--                    android:id="@+id/editTextReporter"/>-->
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/textInputEditTextReporter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/namereporter" />
+                <!--                    android:clickable="true"-->
+                <!--                    android:cursorVisible="false"-->
+                <!--                    android:focusable="false"-->
+                <!--                    android:focusableInTouchMode="false"-->
+                <!--                    android:importantForAutofill="no"-->
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textLayout6"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="120dp"
+                android:text="@string/submit">
+
+            </Button>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

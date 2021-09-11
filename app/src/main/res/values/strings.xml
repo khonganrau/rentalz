@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">rentalz</string>
+    <string name="topic1">RentalZ</string>
+    <string name="topic2">Apartment Rent</string>
+    <string name="propertytype">Property Types</string>
+    <string name="submit">Submit</string>
+    <string name="bedroom">BedRooms</string>
+    <string name="note">Notes</string>
+    <string name="comment">Comment here, please!!!</string>
+    <string name="dateandtime">Date and Time</string>
+    <string name="price">Monthly rent price</string>
+    <string name="funituretype">Furniture types</string>
+    <string name="namereporter">Name of the reporter</string>
+
+    <string-array name="property">
+        <item>House</item>
+        <item>Apartment</item>
+        <item>Flat</item>
+        <item>Bungalow</item>
+    </string-array>
+</resources>
