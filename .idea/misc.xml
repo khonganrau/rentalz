@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidProjects/rentalz/app/src/main/res/drawable/custom_layout_property.xml" value="0.2846153846153846" />
+        <entry key="..\:/AndroidProjects/rentalz/app/src/main/res/drawable/spinner_property.xml" value="0.15833333333333333" />
+        <entry key="..\:/AndroidProjects/rentalz/app/src/main/res/layout/activity_main.xml" value="0.4" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/rentalz2/app/src/main/res/drawable/custom_button.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/rentalz2/app/src/main/res/drawable/custom_layout_front.xml" value="0.17962962962962964" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/rentalz2/app/src/main/res/drawable/filter_dropdown_property.xml" value="0.2128205128205128" />

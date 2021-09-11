@@ -13,6 +13,7 @@
     <string name="namereporter">Name of the reporter</string>
 
     <string-array name="property">
+        <item> </item>
         <item>House</item>
         <item>Apartment</item>
         <item>Flat</item>
